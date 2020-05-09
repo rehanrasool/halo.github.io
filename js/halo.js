@@ -14,6 +14,14 @@ $('#submit-form').on('click', function(e) {
   });
 })
 
+$(".img-giftcard").mouseover(function() {
+    $(this).css({ width: '100%', height: 'auto' });
+});
+
+$(".img-giftcard").mouseout(function() {
+    $(this).css({ width: '75%', height: 'auto' });
+});
+
 // $.ajax({
 //     type: "GET",
 //     url: "/api/rooms",
