@@ -1,16 +1,16 @@
-var $form = $('form#halo-form'),
+var $form1 = $('form#halo-form1'),
     url = 'https://script.google.com/macros/s/AKfycbzO2mre_cAFsawoaK8i2pWyDTZeODYiakRXr78O_aDZMTj7Lg/exec'
 
 var $form2 = $('form#halo-form2'),
     url = 'https://script.google.com/macros/s/AKfycbzO2mre_cAFsawoaK8i2pWyDTZeODYiakRXr78O_aDZMTj7Lg/exec'
 
-$('#submit-form').on('click', function(e) {
+$('#submit-form1').on('click', function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
     method: "GET",
     dataType: "json",
-    data: $form.serializeObject(),
+    data: $form1.serializeObject(),
     success: function (rooms) { 
       alert("Thank you for showing interest in Halo! We will keep you updated!");
     }
