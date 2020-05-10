@@ -31,14 +31,25 @@
     color: #7E8790;
 }
 
+.halo_section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 .header_left {
     background-image: url("../images/header_left.png");
     background-size:cover;
+    object-fit: cover;
+    height: calc(100vh - 56px);
+    width: 100%;
 }
 
 .header_right {
     background-image: url("../images/header_right.png");
     background-size:cover;
+    object-fit: cover;
+    height: calc(100vh - 56px);
+    width: 100%;
 }
 
 .logo {
