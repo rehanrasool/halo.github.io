@@ -1,4 +1,7 @@
-var $form = $('form#test-form'),
+var $form = $('form#halo-form'),
+    url = 'https://script.google.com/macros/s/AKfycbzO2mre_cAFsawoaK8i2pWyDTZeODYiakRXr78O_aDZMTj7Lg/exec'
+
+var $form2 = $('form#halo-form2'),
     url = 'https://script.google.com/macros/s/AKfycbzO2mre_cAFsawoaK8i2pWyDTZeODYiakRXr78O_aDZMTj7Lg/exec'
 
 $('#submit-form').on('click', function(e) {
@@ -13,6 +16,20 @@ $('#submit-form').on('click', function(e) {
     }
   });
 })
+
+$('#submit-form2').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form2.serializeObject(),
+    success: function (rooms) { 
+      alert("Thank you for showing interest in Halo! We will keep you updated!");
+    }
+  });
+})
+
 
 // Real gifts section
 
