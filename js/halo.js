@@ -22,10 +22,23 @@ $(".img-giftcard").mouseout(function() {
     $(this).css({ width: '75%', height: 'auto' });
 });
 
-// $.ajax({
-//     type: "GET",
-//     url: "/api/rooms",
-//     success: function (rooms) { 
+var imgs=["video","AR","minigames"];
+var selected_img=0;
 
-//     }
-// });
+$("#previous_personalization").click(function() {
+  selected_img--;
+  if (selected_img<0) {
+    selected_img=imgs.length-1;
+  }
+  $("#personalization_img").attr("src","images/personalization_"+imgs[selected_img]+".png");
+  $("#personalization_text").text(imgs[selected_img]);
+});
+
+$("#next_personalization").click(function() {
+  selected_img++;
+  if (selected_img>imgs.length-1) {
+    selected_img=0;
+  }
+  $("#personalization_img").attr("src","images/personalization_"+imgs[selected_img]+".png");
+  $("#personalization_text").text(imgs[selected_img]);
+});
