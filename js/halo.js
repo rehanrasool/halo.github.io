@@ -14,6 +14,8 @@ $('#submit-form').on('click', function(e) {
   });
 })
 
+// Real gifts section
+
 $(".img-giftcard").mouseover(function() {
     $(this).css({ width: '100%', height: 'auto' });
 });
@@ -21,6 +23,8 @@ $(".img-giftcard").mouseover(function() {
 $(".img-giftcard").mouseout(function() {
     $(this).css({ width: '75%', height: 'auto' });
 });
+
+// Personalization section
 
 var imgs=["video","AR","minigames"];
 var selected_img=0;
@@ -41,4 +45,16 @@ $("#next_personalization").click(function() {
   }
   $("#personalization_img").attr("src","images/personalization_"+imgs[selected_img]+".png");
   $("#personalization_text").text(imgs[selected_img]);
+});
+
+// Social featues section
+
+$("#social_features2").mouseover(function() {
+    $("#social_features2").css({ width: '50%', height: 'auto' });
+    $("#social_features1").css({ width: '45%', height: 'auto' });
+});
+
+$("#social_features2").mouseout(function() {
+    $("#social_features2").css({ width: '45%', height: 'auto'});
+    $("#social_features1").css({ width: '50%', height: 'auto' });
 });

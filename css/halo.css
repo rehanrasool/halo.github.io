@@ -60,3 +60,7 @@ li {
     font-size: 20px;
 }
 
+#social_features2:hover{
+  z-index:1;
+}
+
