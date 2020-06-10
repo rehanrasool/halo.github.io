@@ -76,3 +76,13 @@ $("#social_features2").mouseout(function() {
     $("#social_features2").css({ width: '45%', height: 'auto'});
     $("#social_features1").css({ width: '50%', height: 'auto' });
 });
+
+$("#social_features4").mouseover(function() {
+    $("#social_features4").css({ width: '50%', height: 'auto' });
+    $("#social_features3").css({ width: '45%', height: 'auto' });
+});
+
+$("#social_features4").mouseout(function() {
+    $("#social_features4").css({ width: '45%', height: 'auto'});
+    $("#social_features3").css({ width: '50%', height: 'auto' });
+});
