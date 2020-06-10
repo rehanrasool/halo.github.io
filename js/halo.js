@@ -5,27 +5,35 @@ var $form2 = $('form#halo-form2'),
     url = 'https://script.google.com/macros/s/AKfycbzO2mre_cAFsawoaK8i2pWyDTZeODYiakRXr78O_aDZMTj7Lg/exec'
 
 $('#submit-form1').on('click', function(e) {
+  alert("Thank you for showing interest in Halo! We will keep you updated!");
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
     method: "GET",
     dataType: "json",
     data: $form1.serializeObject(),
-    success: function (rooms) { 
-      alert("Thank you for showing interest in Halo! We will keep you updated!");
+    success: function (rooms) {
+      // TODO: there is a 1 second delay before this happens, which makes sense,
+      //   but the user does not get an instant feedback so they could keep pressing again
+      // alert("Thank you for showing interest in Halo! We will keep you updated!");
+      $("#halo-form1 :input").prop("disabled", true);
     }
   });
 })
 
 $('#submit-form2').on('click', function(e) {
+  alert("Thank you for showing interest in Halo! We will keep you updated!");
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
     method: "GET",
     dataType: "json",
     data: $form2.serializeObject(),
-    success: function (rooms) { 
-      alert("Thank you for showing interest in Halo! We will keep you updated!");
+    success: function (rooms) {
+      // TODO: there is a 1 second delay before this happens, which makes sense,
+      //   but the user does not get an instant feedback so they could keep pressing again
+      // alert("Thank you for showing interest in Halo! We will keep you updated!");
+      $("#halo-form2 :input").prop("disabled", true);
     }
   });
 })
