@@ -34,11 +34,12 @@ $('#submit-form2').on('click', function(e) {
 // Real gifts section
 
 $(".img-giftcard").mouseover(function() {
-    $(this).css({ width: '100%', height: 'auto' });
+    $(this).css({ width: '105%', height: 'auto' });
 });
 
 $(".img-giftcard").mouseout(function() {
-    $(this).css({ width: '75%', height: 'auto' });
+    $(this).css({ width: '100%', height: 'auto' });
+
 });
 
 // Personalization section
