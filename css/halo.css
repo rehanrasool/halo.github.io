@@ -78,7 +78,7 @@
 }
 
 .fees_panel:hover {
-    box-shadow: 0px 0px 5px 5px rgb(245,245,245);
+    box-shadow: 0px 0px 10px 10px rgb(245,245,245);
 }
 
 .fees_panel {
@@ -86,8 +86,8 @@
     box-shadow: 0px 0px 2px 2px rgb(245,245,245);
     padding-top:5vh;
     padding-bottom:5vh;
-    margin-left:2vw;
-    margin-right:2vw;
+    margin-left:1vw;
+    margin-right:1vw;
     background-color:white;
 }
 

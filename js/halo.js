@@ -52,7 +52,7 @@ $(".img-giftcard").mouseout(function() {
 
 // Personalization section
 
-var imgs=["video","AR","minigames"];
+var imgs=["video","Augmented Reality","minigames"];
 var selected_img=0;
 
 $("#previous_personalization").click(function() {
