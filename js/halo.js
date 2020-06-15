@@ -76,21 +76,54 @@ $("#next_personalization").click(function() {
 // Social featues section
 
 $("#social_features2").mouseover(function() {
+  if ($( window ).width() > 1024) {
     $("#social_features2").css({ width: '18vw', height: 'auto' });
     $("#social_features1").css({ width: '15vw', height: 'auto' });
+  } else { // mobile
+    $("#social_features2").css({ width: '70vw', height: 'auto' });
+    $("#social_features1").css({ width: '60vw', height: 'auto' });
+  }
 });
 
 $("#social_features2").mouseout(function() {
+  if ($( window ).width() > 1024) {
     $("#social_features2").css({ width: '15vw', height: 'auto'});
     $("#social_features1").css({ width: '18vw', height: 'auto' });
+  } else { // mobile
+    $("#social_features2").css({ width: '60vw', height: 'auto'});
+    $("#social_features1").css({ width: '70vw', height: 'auto' });
+  }
 });
 
 $("#social_features4").mouseover(function() {
+  if ($( window ).width() > 1024) {
     $("#social_features4").css({ width: '18vw', height: 'auto' });
     $("#social_features3").css({ width: '15vw', height: 'auto' });
+  } else { // mobile
+    $("#social_features4").css({ width: '70vw', height: 'auto' });
+    $("#social_features3").css({ width: '60vw', height: 'auto' });
+  }
 });
 
 $("#social_features4").mouseout(function() {
+  if ($( window ).width() > 1024) {
     $("#social_features4").css({ width: '15vw', height: 'auto'});
     $("#social_features3").css({ width: '18vw', height: 'auto' });
+  } else { // mobile
+    $("#social_features4").css({ width: '60vw', height: 'auto'});
+    $("#social_features3").css({ width: '70vw', height: 'auto' });
+  }
+});
+
+
+
+
+$(document).ready(function() {
+  $("#submit-form1").css("height", $("#halo-form1 .input-group").height());
+  $("#submit-form1").css("width",  $("#halo-form1 .input-group").width()/3);
+  $("#submit-form1").css("margin-left", -1 * $("#halo-form1 .input-group").width()/3.6);
+
+  $("#submit-form2").css("height", $("#halo-form2 .input-group").height());
+  $("#submit-form2").css("width",  $("#halo-form2 .input-group").width()/3);
+  $("#submit-form2").css("margin-left", -1 * $("#halo-form2 .input-group").width()/4);
 });

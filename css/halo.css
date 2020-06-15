@@ -148,3 +148,51 @@ li {
 .form-control::-moz-placeholder { color: rgb(210,210,210); font-weight: lighter; } /* Mozilla Firefox 19+ */
 .form-control:-ms-input-placeholder { color: rgb(210,210,210); font-weight: lighter; } /* Internet Explorer 10-11 */
 .form-control::-ms-input-placeholder { color: rgb(210,210,210); font-weight: lighter; } /* Microsoft Edge */
+
+
+/*********************************************************************************************************************
+ * Mobile-specific styles
+ *********************************************************************************************************************/
+
+.header_top_m {
+    background-image: url("../images/header_left.png");
+    background-size:cover;
+    object-fit: cover;
+    height: 120vw;
+    width: 100vw;
+}
+
+.header_bottom_m {
+    background-image: url("../images/header_right.png");
+    background-size:cover;
+    object-fit: cover;
+    height: 120vw;
+    width: 100vw;
+}
+
+.header_form_section_m {
+    border-radius: 0.8vh;
+    box-shadow: 0px 0px 1px 1px rgb(245,245,245);
+    margin-left: 9vw;
+    margin-right: 9vw;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+}
+
+.fees_panel_m:hover {
+    box-shadow: 0px 0px 10px 10px rgb(245,245,245);
+}
+
+.fees_panel_m {
+    box-shadow: 0px 0px 2px 2px rgb(245,245,245);
+    padding-top:10vw;
+    padding-bottom:10vw;
+    /*margin-left:0.5vw;*/
+    /*margin-right:0.5vw;*/
+    background-color:white;
+}
