@@ -126,4 +126,13 @@ $(document).ready(function() {
   $("#submit-form2").css("height", $("#halo-form2 .input-group").height());
   $("#submit-form2").css("width",  $("#halo-form2 .input-group").width()/3);
   $("#submit-form2").css("margin-left", -1 * $("#halo-form2 .input-group").width()/4);
+
+  if ($( window ).width() <= 1024) {
+    $("#halo-form1 input[type=text]").css("font-size", '3.5vw');
+    $("#submit-form1").css("font-size", '3.5vw');
+
+    $("#halo-form2 input[type=text]").css("font-size", '3.5vw');
+    $("#submit-form2").css("font-size", '3.5vw');
+  }
+
 });
