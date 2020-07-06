@@ -15,8 +15,7 @@ $('#submit-form1').on('click', function(e) {
     success: function (rooms) {
       // TODO: there is a 1 second delay before this happens, which makes sense,
       //   but the user does not get an instant feedback so they could keep pressing again
-      //   so we print "Submitted!" as soon as they click and disable form on success
-      $("#halo-form1 :input").prop("disabled", true);
+      //   so we print "Submitted!" as soon as they click
     }
   });
 })
@@ -32,8 +31,7 @@ $('#submit-form2').on('click', function(e) {
     success: function (rooms) {
       // TODO: there is a 1 second delay before this happens, which makes sense,
       //   but the user does not get an instant feedback so they could keep pressing again
-      //   so we print "Submitted!" as soon as they click and disable form on success
-      $("#halo-form2 :input").prop("disabled", true);
+      //   so we print "Submitted!" as soon as they click
     }
   });
 })
