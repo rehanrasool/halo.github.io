@@ -1,17 +1,8 @@
 
 /* Fix bouncing issue on iOS */
-html {
-  position: fixed;
-  height: 100%;
-  overflow: hidden;
-}
-
 body {
-  width: 100vw;
-  height: 100vh;
-  overflow-y: scroll;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
+  position: relative;
 }
 
 /* H0 */
