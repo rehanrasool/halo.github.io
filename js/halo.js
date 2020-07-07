@@ -83,6 +83,11 @@ $("#social_features2").mouseover(function() {
   }
 });
 
+$("social_features_images_m").on("swipeleft",function(){
+  $("#social_features2").css({ width: '70vw', height: 'auto' });
+  $("#social_features1").css({ width: '60vw', height: 'auto' });
+});
+
 $("#social_features2").mouseout(function() {
   if ($( window ).width() > 1024) {
     $("#social_features2").css({ width: '15vw', height: 'auto'});
@@ -91,6 +96,11 @@ $("#social_features2").mouseout(function() {
     $("#social_features2").css({ width: '60vw', height: 'auto'});
     $("#social_features1").css({ width: '70vw', height: 'auto' });
   }
+});
+
+$("social_features_images_m").on("swiperight",function(){
+  $("#social_features2").css({ width: '60vw', height: 'auto'});
+  $("#social_features1").css({ width: '70vw', height: 'auto' });
 });
 
 $("#social_features4").mouseover(function() {
