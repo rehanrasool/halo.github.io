@@ -150,11 +150,11 @@ li {
     opacity:1.0;
 }
 
-.form-control::-webkit-input-placeholder { color: grey; font-weight: lighter;} /* WebKit, Blink, Edge */
-.form-control:-moz-placeholder { color: grey; font-weight: lighter; } /* Mozilla Firefox 4 to 18 */
-.form-control::-moz-placeholder { color: grey; font-weight: lighter; } /* Mozilla Firefox 19+ */
-.form-control:-ms-input-placeholder { color: grey; font-weight: lighter; } /* Internet Explorer 10-11 */
-.form-control::-ms-input-placeholder { color: grey; font-weight: lighter; } /* Microsoft Edge */
+.form-control::-webkit-input-placeholder { color: grey; font-weight: normal;} /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: grey; font-weight: normal; } /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: grey; font-weight: normal; } /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: grey; font-weight: normal; } /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: grey; font-weight: normal; } /* Microsoft Edge */
 
 
 /*********************************************************************************************************************
