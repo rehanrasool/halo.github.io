@@ -62,7 +62,7 @@ $("#previous_personalization").click(function() {
   $("#personalization_text").text(imgs[selected_img]);
 });
 
-$("#next_personalization").click(function() {
+$("#next_personalization,#personalization_img").click(function() {
   selected_img++;
   if (selected_img>imgs.length-1) {
     selected_img=0;
