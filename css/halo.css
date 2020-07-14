@@ -1,11 +1,6 @@
 
 /* Fix bouncing issue on iOS */
-body {
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden !important;
-    position: relative;
-}
+html, body {width: auto!important; overflow-x: hidden!important}
 
 /* H0 */
 .h0 {
