@@ -112,6 +112,10 @@ li {
     color: #7E8790;
 }
 
+.img-giftcard_m:hover{
+  z-index:1;
+}
+
 .halo_form {
     border-radius: 2vh;
 }

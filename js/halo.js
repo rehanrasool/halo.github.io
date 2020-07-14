@@ -45,7 +45,14 @@ $(".img-giftcard").mouseover(function() {
 
 $(".img-giftcard").mouseout(function() {
     $(this).css({ width: '100%', height: 'auto' });
+});
 
+$(".img-giftcard_m").mouseover(function() {
+    $(this).css({ width: '105%', height: 'auto' });
+});
+
+$(".img-giftcard_m").mouseout(function() {
+    $(this).css({ width: '100%', height: 'auto' });
 });
 
 // Personalization section
